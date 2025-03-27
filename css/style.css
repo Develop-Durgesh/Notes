@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+#navBar {
+    background-color: #FFBF00;
+    display: flex;
+    align-content: center;
+    padding: 10px 5px;
+}
+
+#navIcon {
+    padding: 5px;
+}
+#navText {
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#notesSect {
+    display: flex;
+    flex-direction: column;
+}
+
+#newNoteBox {
+    width: 150px;
+    height: 44px;
+    /* border: 1px solid black; */
+    margin: 20px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 28px;
+}
+
+#newNoteBtn {
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: #FFBF00;
+    color: white;
+    font-weight: 1000;
+}
+
+#noteBtnhov {
+    font-size: 1.1rem;
+    display: none;
+    padding: 0 5px;
+    font-weight: 900;
+    width: auto;
+    white-space: nowrap;
+}
+
+#newNoteBox:hover #newNoteBtn {
+    width: 150px;
+    border-radius: 30px;
+    transition: ease-in-out 300ms;
+}
+
+#newNoteBox:hover #noteBtnhov {
+    transition: ease-in-out 500ms;
+    display: block;
+}
+
+
+/*      Notes Section        */
+
+#notesSect {
+    height: 100%;
+    background-color: #EFEFEF;
+}
+
+#notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.notesBox {
+    /* border: 2px solid magenta; */
+    padding: 5px;
+    margin: 25px;
+    /* box-shadow:2px 3px 3px #999; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.operation {
+    /* border: 2px solid blue; */
+    overflow: hidden;
+}
+
+.btns {
+    /* border: 2px solid black; */
+    float: right;
+    position: relative;
+}
+
+.ipArea {
+    height: 150px;
+    width: 250px;
+    border: 0;
+}
+
+.main {
+    height: 150px;
+    width: 250px;
+    border: 0;
+    background-color: #fff;
+}
+
+
+button {
+    border: 0;
+    border-radius: 2px;
+    margin-bottom: 7px;
+    padding: 1px;
+    margin-right: 4px;
+}
+
+.edit {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.edit:hover {
+    background-color: #fff;
+    color: #27ae60;
+    box-shadow:2px 3px 5px #999;
+}
+
+/* #27ae60 */
+/* #e74c3c */
+
+.delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.delete:hover {
+    background-color: #fff;
+    color: #e74c3c;
+    box-shadow:2px 3px 5px #999;
+}
+
+.hidden {
+    display: none;
+}
